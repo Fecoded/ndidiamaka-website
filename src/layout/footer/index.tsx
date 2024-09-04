@@ -1,6 +1,6 @@
 "use client";
 // Core
-import { Box, Container, Flex } from "@chakra-ui/react";
+import { Box, Container, Flex, Grid } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -25,7 +25,12 @@ export const Footer = () => {
 				<StyledSpacer variant="space64" />
 				<Box bg="$white" w="100%" h="1px"></Box>
 				<StyledSpacer variant="space64" />
-				<Flex justifyContent="space-between" alignItems="center">
+				<Flex
+					justifyContent="space-between"
+					alignItems={{ lg: "center" }}
+					flexDirection={{ base: "column", md: "row", lg: "row" }}
+					gap="30px"
+				>
 					<Box>
 						<StyledText variant="body2-regular" color="$white">
 							info@daneizotradeafrica.com
@@ -43,7 +48,15 @@ export const Footer = () => {
 							<Image src={IMAGES.DaniezoLogo} alt="Daneizo_logo" />
 						</Box>
 					</Box>
-					<Flex justifyContent="space-between" gap="70px">
+					<Grid
+						templateColumns={{
+							base: "repeat(1, 1fr)",
+							md: "repeat(2, 1fr)",
+							lg: "repeat(4, 1fr)",
+						}}
+						gap={{ base: "20px", lg: "70px" }}
+						alignItems="center"
+					>
 						{FooterList.map((item, idx) => (
 							<Box key={idx}>
 								<StyledText variant="body1-bold" color="$white">
@@ -77,7 +90,7 @@ export const Footer = () => {
 								</Flex>
 							</Box>
 						))}
-					</Flex>
+					</Grid>
 				</Flex>
 			</Container>
 		</Box>
