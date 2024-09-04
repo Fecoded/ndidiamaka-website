@@ -12,7 +12,7 @@ import { featureCardList } from "./utils";
 
 export const Features = () => {
 	return (
-		<Box bg="$black40" py="40px">
+		<Box bg="$black40" py="40px" id="features">
 			<Container maxW="1216px">
 				<Flex flexDirection="column" justifyContent="center" alignItems="center">
 					<Badge

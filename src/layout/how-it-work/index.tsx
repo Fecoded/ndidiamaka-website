@@ -14,7 +14,7 @@ import { IMAGES } from "@public/assets";
 export const HowItWorks = () => {
 	const { list, currentImage } = useController({ data: HowItWorkList, imageLinks });
 	return (
-		<Box bg="$black40" py="40px">
+		<Box bg="$black40" py="40px" id="how-it-works">
 			<Container maxW="1000px">
 				<Flex flexDirection="column" justifyContent="center" alignItems="center">
 					<StyledText variant="h3-regular" color="$white">

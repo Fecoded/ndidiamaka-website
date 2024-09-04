@@ -17,7 +17,7 @@ import { IMAGES } from "@public/assets";
 export const WhyChooseUs = () => {
 	const { list, currentImage } = useController({ data: WhyChooseUsList, imageLinks });
 	return (
-		<Box bg="$lightBlack" py="100px">
+		<Box bg="$lightBlack" py="100px" id="why-choose-us">
 			<Container maxW="container.xl">
 				<StyledText variant="h3-regular" color="$white">
 					Why choose us?
