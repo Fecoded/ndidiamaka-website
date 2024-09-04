@@ -3,6 +3,7 @@
 // Core
 import { Box, Container, Flex } from "@chakra-ui/react";
 import Image from "next/image";
+import { useContext } from "react";
 
 // Components
 import { StyledButton, StyledSpacer, StyledText } from "@src/components";
@@ -10,8 +11,10 @@ import { StyledButton, StyledSpacer, StyledText } from "@src/components";
 // Utils
 import { IMAGES, SVGs } from "@public/assets";
 import { colors } from "@src/styles";
+import { ProviderContext } from "@src/utils";
 
 export const TakingCharge = () => {
+	const { handleButtonClick } = useContext(ProviderContext);
 	return (
 		<Box bg="$white" py="100px">
 			<Container maxW="1100px">
@@ -49,7 +52,7 @@ export const TakingCharge = () => {
 							<StyledButton
 								color="$black40"
 								bgColor="$white"
-								onClick={() => []}
+								onClick={handleButtonClick}
 								leftIcon={
 									<Flex gap="10px">
 										<SVGs.AndroidIcon

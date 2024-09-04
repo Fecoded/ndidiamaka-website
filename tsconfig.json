@@ -28,7 +28,7 @@
 			"@redux/*": ["src/utils/redux/*"],
 			"@utils/*": ["src/utils/*"],
 			"@styles/*": ["src/styles/*"],
-			"@layout/*": ["src/utils/layout/*"],
+			"@layout/*": ["src/layout/*"],
 			"@assets/*": ["public/assets/*"],
 			"@common/*": ["src/layout/common/*"]
 		}

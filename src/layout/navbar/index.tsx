@@ -2,6 +2,8 @@
 
 // Core
 import Image from "next/image";
+import { useContext } from "react";
+
 import { Box, Container, Flex } from "@chakra-ui/react";
 
 // Components
@@ -11,8 +13,10 @@ import { StyledText, StyledButton } from "@src/components";
 import { IMAGES } from "@public/assets";
 import { NavList } from "./utils";
 import { colors } from "@src/styles";
+import { ProviderContext } from "@src/utils";
 
 export const Navbar = () => {
+	const { handleButtonClick } = useContext(ProviderContext);
 	return (
 		<Flex
 			w="100%"
@@ -37,7 +41,7 @@ export const Navbar = () => {
 								<StyledText variant="body2-md">{item.title}</StyledText>
 							</a>
 						))}
-						<StyledButton color={colors.$white} onClick={() => []}>
+						<StyledButton color={colors.$white} onClick={handleButtonClick}>
 							<StyledText variant="body2-regular" color={colors.$white}>
 								Get the Deneizo App
 							</StyledText>

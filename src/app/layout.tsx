@@ -1,22 +1,30 @@
-import type { Metadata } from "next";
+"use client";
+
+import { ProviderContext } from "@src/utils";
 import "./globals.css";
 import { Providers } from "@src/styles";
-
-export const metadata: Metadata = {
-	title: "Daneizo",
-	keywords: "",
-	description: "Your Business Solution lies here",
-};
+import { useDownloadApp } from "@src/utils/hooks";
 
 export default function RootLayout({
 	children,
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
+	const { handleButtonClick, isOpen, onClose } = useDownloadApp();
 	return (
 		<html lang="en">
 			<body>
-				<Providers>{children}</Providers>
+				<Providers>
+					<ProviderContext.Provider
+						value={{
+							handleButtonClick,
+							isOpen,
+							onClose,
+						}}
+					>
+						{children}
+					</ProviderContext.Provider>
+				</Providers>
 			</body>
 		</html>
 	);

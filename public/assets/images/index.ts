@@ -17,6 +17,8 @@ import SustainableGrowthPlan from "./sustainable-growth-plan.png";
 import TechnicalAdvisory from "./technical-advisory.png";
 import TakingCharge from "./taking-charge.png";
 import TakingChargeBg from "./taking-charge-bg.png";
+import ScanToDownload from "./scan-to-download.png";
+import ModalBg from "./modal-bg.png";
 
 export const IMAGES = {
 	DaniezoIcon,
@@ -38,4 +40,6 @@ export const IMAGES = {
 	TechnicalAdvisory,
 	TakingCharge,
 	TakingChargeBg,
+	ScanToDownload,
+	ModalBg,
 };

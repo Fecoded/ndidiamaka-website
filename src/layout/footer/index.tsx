@@ -14,7 +14,7 @@ import { FooterList } from "./utils";
 
 export const Footer = () => {
 	return (
-		<Box bg="$black40" py="100px">
+		<Box bg="$black40" py="60px">
 			<Container maxW="container.xl">
 				<Flex justifyContent="space-between" alignItems="center">
 					<StyledText variant="h3-bold" color="$white">
@@ -22,9 +22,9 @@ export const Footer = () => {
 					</StyledText>
 					<QrCode value="This is the link to Daneizo app" />
 				</Flex>
-				<StyledSpacer variant="space64" />
+				<StyledSpacer variant="space48" />
 				<Box bg="$white" w="100%" h="1px"></Box>
-				<StyledSpacer variant="space64" />
+				<StyledSpacer variant="space48" />
 				<Flex
 					justifyContent="space-between"
 					alignItems={{ lg: "center" }}
