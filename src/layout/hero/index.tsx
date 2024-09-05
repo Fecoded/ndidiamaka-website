@@ -32,7 +32,7 @@ export const HeroLayout = () => {
 						alignItems={{ md: "center", lg: "center" }}
 						mt={{ base: "150px", md: "22px", lg: "7rem" }}
 						mb={{ lg: "-2rem" }}
-						gap="50px"
+						gap="25px"
 					>
 						<Box w="100%" maxW="572px" mb="8rem">
 							<StyledText
