@@ -30,11 +30,10 @@ export const HeroLayout = () => {
 						flexDirection={{ base: "column", md: "row", lg: "row" }}
 						justifyContent="space-between"
 						alignItems={{ md: "center", lg: "center" }}
-						mt={{ base: "150px", md: "22px", lg: "7rem" }}
+						mt={{ base: "150px", md: "7rem", lg: "7rem" }}
 						mb={{ lg: "-2rem" }}
-						gap="25px"
 					>
-						<Box w="100%" maxW="572px" mb="8rem">
+						<Box w="100%" maxW="572px" mb={{ base: "4rem", lg: "8rem" }}>
 							<StyledText
 								variant="h2-bold"
 								lineHeight={{ base: "60px", lg: lineHeights.lh75 }}
