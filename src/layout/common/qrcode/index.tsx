@@ -26,7 +26,7 @@ export const QrCode = ({ value }: { value: string }) => {
 				mx="1px"
 				px={5}
 			>
-				<Flex justifyContent="space-between" alignItems="center" px={4} py={10}>
+				<Flex justifyContent="space-between" alignItems="center" px={4} py={5}>
 					<Box w="100%" maxW="145px">
 						<StyledText variant="body1-regular" color="$white">
 							Download Daneizo App
