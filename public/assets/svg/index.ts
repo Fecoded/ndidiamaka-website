@@ -3,6 +3,7 @@ import AndroidIcon from "./android.svg";
 import Linkedin from "./linkedin-button.svg";
 import Facebook from "./facebook-button.svg";
 import Instagram from "./instagram-button.svg";
+import MenuIcon from "./menu-icon.svg";
 
 export const SVGs = {
 	AppleIcon,
@@ -10,4 +11,5 @@ export const SVGs = {
 	Linkedin,
 	Facebook,
 	Instagram,
+	MenuIcon,
 };
