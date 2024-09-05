@@ -53,7 +53,7 @@ export const HeroLayout = () => {
 								onClick={handleButtonClick}
 								leftIcon={
 									<Flex gap="10px">
-										<SVGs.AndroidIcon />
+										<SVGs.AndroidIcon width="20" height="24" />
 										<SVGs.AppleIcon />
 									</Flex>
 								}

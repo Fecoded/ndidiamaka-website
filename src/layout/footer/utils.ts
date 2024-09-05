@@ -56,11 +56,15 @@ export const FooterList = [
 				link: "",
 			},
 			{
-				image: SVGs.Instagram,
+				image: SVGs.Twitter,
 				link: "",
 			},
 			{
 				image: SVGs.Linkedin,
+				link: "",
+			},
+			{
+				image: SVGs.Instagram,
 				link: "",
 			},
 		],

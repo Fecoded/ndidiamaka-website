@@ -29,7 +29,7 @@ export const Footer = () => {
 					justifyContent="space-between"
 					alignItems={{ lg: "center" }}
 					flexDirection={{ base: "column", md: "row", lg: "row" }}
-					gap="30px"
+					gap={{ base: "30px", lg: "50px" }}
 				>
 					<Box>
 						<StyledText variant="body2-regular" color="$white">
@@ -41,7 +41,7 @@ export const Footer = () => {
 						</StyledText>
 						<StyledSpacer variant="space8" />
 						<StyledText variant="body2-regular" color="$white">
-							Somewhere in the World
+							Ajao Estate, Lagos, Nigeria
 						</StyledText>
 						<StyledSpacer variant="space24" />
 						<Box bgColor="$white" p={1} borderRadius="10px" w="100%" maxW="152px">
@@ -54,8 +54,9 @@ export const Footer = () => {
 							md: "repeat(2, 1fr)",
 							lg: "repeat(4, 1fr)",
 						}}
-						gap={{ base: "20px", lg: "70px" }}
-						alignItems="center"
+						gap="20px"
+						alignItems="flex-start"
+						maxW="750px"
 					>
 						{FooterList.map((item, idx) => (
 							<Box key={idx}>

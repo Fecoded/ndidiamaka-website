@@ -40,7 +40,7 @@ export const QrCode = ({ value }: { value: string }) => {
 
 			<Flex gap="20px" justifyContent="center" my={2}>
 				<Flex gap="10px" bgColor="$black40" alignItems="center" borderRadius={10} p={2}>
-					<SVGs.AndroidIcon />
+					<SVGs.AndroidIcon width="20" height="24" />
 					<Box>
 						<StyledText variant="body3-regular" color="$white">
 							Download on the

@@ -58,6 +58,8 @@ export const TakingCharge = () => {
 										<SVGs.AndroidIcon
 											fill={colors.$black40}
 											stroke={colors.$black40}
+											width="20"
+											height="24"
 										/>
 										<SVGs.AppleIcon />
 									</Flex>
