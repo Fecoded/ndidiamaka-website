@@ -29,7 +29,7 @@ export const TakingCharge = () => {
 					pt={20}
 				>
 					<Flex
-						gap={{ base: "30px", lg: "0" }}
+						gap={{ base: "30px", lg: "10px" }}
 						alignItems="center"
 						flexDirection={{ base: "column", md: "row", lg: "row" }}
 					>
