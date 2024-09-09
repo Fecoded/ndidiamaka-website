@@ -37,7 +37,7 @@ export type Variants =
 	| "space224"
 	| "space256";
 
-export const SpaceUtils = (variant: Variants) => {
+export const SpaceUtils = (variant: Variants = "space8") => {
 	const spacingKey = variant.startsWith("space") ? `spacing${variant.slice(5)}` : variant;
 
 	return {
