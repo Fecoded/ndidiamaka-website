@@ -27,6 +27,7 @@ export const TakingCharge = () => {
 					maxW="1040px"
 					px={3}
 					pt={20}
+					borderRadius="32px"
 				>
 					<Flex
 						gap={{ base: "30px", lg: "10px" }}
