@@ -10,8 +10,13 @@ export const colors = {
 	$black10: "#999999",
 	$black5: "#222222",
 
+	$biegePrimaryDark: "#56554D",
+	$biegePrimaryLight: "#FCFCF4",
+
 	$white: "#ffffff",
 	$lightBlack: "#1B1F28",
 	$lightBlue: "#EDFFFF",
 	$lightPurple: "#CCCEF8",
+
+	$borderColor: "#D5DCE3",
 };

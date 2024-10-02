@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { As, Button, ButtonProps } from "@chakra-ui/react";
+import { Button, ButtonProps } from "@chakra-ui/react";
 
 type GlobalButtonProps = {
 	colorScheme?: string;
@@ -14,7 +14,6 @@ type GlobalButtonProps = {
 	type?: "button" | "submit" | "reset";
 	rightIcon?: React.ReactElement;
 	leftIcon?: React.ReactElement;
-	as?: As;
 	className?: string;
 	style?: any;
 	borderColor?: string;
@@ -26,17 +25,16 @@ export const StyledButton = ({
 	isDisabled = false,
 	variant = "solid",
 	children,
-	color = "$primary",
+	color = "$biegePrimaryDark",
 	type = "button",
 	bgColor,
 	onClick,
 	rightIcon,
 	leftIcon,
-	as = "button",
 	className,
 	style,
 	colorScheme,
-	borderColor = "$primary",
+	borderColor = "$biegePrimaryDark",
 	...rest
 }: GlobalButtonProps) => {
 	if (variant === "outline") {
@@ -45,7 +43,6 @@ export const StyledButton = ({
 				colorScheme={colorScheme}
 				style={style}
 				className={className}
-				as={as}
 				bgColor="transparent"
 				borderColor={borderColor}
 				borderRadius={8}
@@ -75,7 +72,6 @@ export const StyledButton = ({
 			colorScheme={colorScheme}
 			style={style}
 			className={className}
-			as={as}
 			bgColor={bgColor || "$primary"}
 			borderRadius={8}
 			color={color}

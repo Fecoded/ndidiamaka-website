@@ -14,3 +14,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
 }
+
+.react-multi-carousel-track {
+  gap: 5px;
+}

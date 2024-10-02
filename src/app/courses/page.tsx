@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import HomeLayout from "@src/layout";
+import CoursesLayout from "@src/layout/courses";
 
 export const metadata: Metadata = {
-	title: "NDIDIAMAKA TECH INITIATIVE",
+	title: "Courses - NTI",
 	keywords: "TECHNOLOGY, LMS, Learning Management System",
 	description:
 		"No tech skill or degree? No problem. At NDIDIAMAKA TECH INITIATIVE, we offer free courses to equip you with the skills to break into the tech industry. Our courses include Data Analysis, Cybersecurity, UX/UI, and more. Your future in tech starts here. Learn, grow, and excel in flying colours.",
 };
 
-export default function Home() {
-	return <HomeLayout />;
+export default function Course() {
+	return <CoursesLayout />;
 }

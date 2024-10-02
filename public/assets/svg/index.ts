@@ -1,19 +1,23 @@
-import AppleIcon from "./apple.svg";
-import AndroidIcon from "./android.svg";
-import Linkedin from "./linkedin-button.svg";
-import Facebook from "./facebook-button.svg";
-import Twitter from "./twitter.svg";
-import Instagram from "./instagram.svg";
+import AmakaLogo from "./amaka-logo.svg";
 import MenuIcon from "./menu-icon.svg";
-import AndroidLight from "./android-light.svg";
+import Mission from "./mission.svg";
+import Vision from "./vision.svg";
+import Donation from "./donation.svg";
+import Volunteer from "./volunteer.svg";
+import PartnerWithUs from "./partner-with-us.svg";
+import Linkedin from "./linkedin.svg";
+import Facebook from "./facebook.svg";
+import Instagram from "./instagram.svg";
 
 export const SVGs = {
-	AppleIcon,
-	AndroidIcon,
+	AmakaLogo,
+	MenuIcon,
+	Mission,
+	Vision,
+	Donation,
+	Volunteer,
+	PartnerWithUs,
 	Linkedin,
 	Facebook,
 	Instagram,
-	MenuIcon,
-	Twitter,
-	AndroidLight,
 };
